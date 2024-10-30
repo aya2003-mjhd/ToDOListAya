@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: url('AI-generated\ image\ related\ to\ a\ to-do\ list.png') no-repeat center center fixed; /* Replace 'path_to_background_image.jpg' with the path to your image */
+  background: url('AI-generated\ image\ related\ to\ a\ to-do\ list.png') no-repeat center center fixed; /* Replace 'path_to_your_to_do_list_background_image.png' with the path to this image */
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ body {
 
 .dark-mode {
   background-color: rgba(44, 44, 44, 0.8);
-  color: #ffffff;
+  color: #e0e0e0;
 }
 
 .dark-mode body {
@@ -20,7 +20,7 @@ body {
 .container {
   width: 50%;
   margin: 50px auto;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -42,6 +42,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   margin: 10px 0;
+  flex-wrap: wrap;
 }
 
 .add-btn {
@@ -156,4 +157,40 @@ button {
   display: flex;
   justify-content: flex-end;
   margin: 10px 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .input-container,
+  .search-container,
+  .filters,
+  #progress {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-container input,
+  .input-container select,
+  .input-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filters button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .add-btn,
+  #toggleDarkMode,
+  #clearCompletedBtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
