@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('AI-generated\ image\ related\ to\ a\ to-do\ list.png') no-repeat center center fixed; /* Replace 'path_to_background_image.jpg' with the path to your image */
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+  background-color: rgba(44, 44, 44, 0.8);
+  color: #ffffff;
+}
+
+.dark-mode body {
+  background: url('path_to_dark_background_image.jpg') no-repeat center center fixed; /* Replace 'path_to_dark_background_image.jpg' with the path to your dark mode image */
+  background-size: cover;
+}
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.5s;
+}
+
+.dark-mode .container {
+  background: rgba(60, 60, 60, 0.9);
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container,
+.search-container,
+.filters,
+#progress {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.add-btn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-btn:hover {
+  background: linear-gradient(45deg, #5b10b8, #1b63e2);
+  transform: scale(1.05);
+}
+
+.filters button {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 5px;
+}
+
+.filters button:hover {
+  background: linear-gradient(45deg, #e55a00, #e00675);
+  transform: scale(1.05);
+}
+
+#toggleDarkMode {
+  background: linear-gradient(45deg, #00c9ff, #92fe9d);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#toggleDarkMode:hover {
+  background: linear-gradient(45deg, #00b3e4, #7be175);
+  transform: scale(1.05);
+}
+
+#clearCompletedBtn {
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#clearCompletedBtn:hover {
+  background: linear-gradient(45deg, #f5422d, #c51e60);
+  transform: scale(1.05);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s, transform 0.2s ease-in-out;
+}
+
+.task:hover {
+  transform: scale(1.02);
+}
+
+.low {
+  border-left: 4px solid green;
+}
+
+.medium {
+  border-left: 4px solid orange;
+}
+
+.high {
+  border-left: 4px solid red;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.dark-mode .task {
+  background-color: #3b3b3b;
+  border-bottom: 1px solid #555;
+}
+
+button {
+  cursor: pointer;
+}
+
+#quote {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 20px;
+}

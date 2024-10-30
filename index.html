@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body onload="loadTasksFromStorage(); loadTheme(); displayMotivationalQuote();">
+  <div class="dark-mode-toggle">
+    <span></span>
+    <button id="toggleDarkMode">Toggle Dark Mode</button>
+  </div>
+  <div class="container">
+    <h1>✨ Ultimate To-Do List ✨</h1>
+    <div id="quote"></div>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter a task...">
+      <input type="date" id="dueDateInput">
+      <select id="prioritySelect">
+        <option value="Low">Low</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="High">High</option>
+      </select>
+      <input type="text" id="categoryInput" placeholder="Category (e.g., Work)">
+      <button id="addTaskBtn" class="add-btn">Add Task</button>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search tasks...">
+    </div>
+    <div class="filters">
+      <button id="allBtn">All</button>
+      <button id="activeBtn">Active</button>
+      <button id="completedBtn">Completed</button>
+      <button id="clearCompletedBtn">Clear Completed</button>
+    </div>
+    <div id="progress">
+      <p id="taskProgress">0 of 0 tasks completed</p>
+    </div>
+    <div id="taskList" class="task-list"></div>
+  </div>
+</body>
+</html>
