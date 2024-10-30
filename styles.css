@@ -33,6 +33,7 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 1.5em;
 }
 
 .input-container,
@@ -160,10 +161,53 @@ button {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
   .container {
     width: 80%;
-    margin: 20px auto;
+  }
+
+  .input-container,
+  .search-container,
+  .filters,
+  #progress {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-container input,
+  .input-container select,
+  .input-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filters button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .add-btn,
+  #toggleDarkMode,
+  #clearCompletedBtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 10px auto;
     padding: 15px;
   }
 
@@ -192,5 +236,48 @@ button {
   #clearCompletedBtn {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .input-container,
+  .search-container,
+  .filters,
+  #progress {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-container input,
+  .input-container select,
+  .input-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filters button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .add-btn,
+  #toggleDarkMode,
+  #clearCompletedBtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 0.9em;
   }
 }
